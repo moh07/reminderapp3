@@ -23,11 +23,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="nombre de jour"
         android:id="@+id/textView10"
+        android:text="description d&apos;evenement"
         android:layout_below="@+id/textView9"
-        android:layout_alignLeft="@+id/textView11"
-        android:layout_alignStart="@+id/textView11" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -43,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="nombre de jour"
+        android:text="heure debut"
         android:id="@+id/textView11"
         android:layout_below="@+id/editText3"
         android:layout_centerHorizontal="true" />
@@ -62,19 +61,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="nombre de jour"
+        android:text="heure fin"
         android:id="@+id/textView12"
         android:layout_below="@+id/editText4"
-        android:layout_alignRight="@+id/editText4"
-        android:layout_alignEnd="@+id/editText4" />
+        android:layout_alignRight="@+id/calendarView2"
+        android:layout_alignEnd="@+id/calendarView2" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText5"
         android:layout_below="@+id/textView12"
-        android:layout_alignLeft="@+id/editText4"
-        android:layout_alignStart="@+id/editText4"
-        android:layout_alignRight="@+id/textView12"
-        android:layout_alignEnd="@+id/textView12" />
+        android:layout_alignRight="@+id/editText4"
+        android:layout_alignEnd="@+id/editText4"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="date"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true" />
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/calendarView2"
+        android:layout_below="@+id/textView13"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="Enregistrer"
+
+        android:id="@+id/button3"
+        android:layout_below="@+id/calendarView2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>
