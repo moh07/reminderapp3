@@ -7,119 +7,143 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.moh.reminderapp.inscription">
+    tools:context="com.example.moh.reminderapp.inscription.inscription">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrol">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder App"
+            />
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+    </ScrollView>
+
+</LinearLayout>
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Facebook"
-        android:id="@+id/button4"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:background="#0d14ec" />
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Facebook"-->
+        <!--android:id="@+id/button4"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="70dp"-->
+        <!--android:background="#0d14ec" />-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Inscription"
-        android:id="@+id/textView14"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Inscription"-->
+        <!--android:id="@+id/textView14"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="nom"
-        android:id="@+id/textView15"
-        android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp" />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="nom"-->
+        <!--android:id="@+id/textView15"-->
+        <!--android:layout_below="@+id/button4"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="43dp" />-->
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText6"
-        android:layout_below="@+id/textView15"
-        android:layout_alignRight="@+id/button4"
-        android:layout_alignEnd="@+id/button4"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText6"-->
+        <!--android:layout_below="@+id/textView15"-->
+        <!--android:layout_alignRight="@+id/button4"-->
+        <!--android:layout_alignEnd="@+id/button4"-->
+        <!--android:layout_alignLeft="@+id/button4"-->
+        <!--android:layout_alignStart="@+id/button4" />-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="prenom"
-        android:id="@+id/textView16"
-        android:layout_below="@+id/editText6"
-        android:layout_centerHorizontal="true" />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="prenom"-->
+        <!--android:id="@+id/textView16"-->
+        <!--android:layout_below="@+id/editText6"-->
+        <!--android:layout_centerHorizontal="true" />-->
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText7"
-        android:layout_below="@+id/textView16"
-        android:layout_alignRight="@+id/editText6"
-        android:layout_alignEnd="@+id/editText6"
-        android:layout_alignLeft="@+id/editText6"
-        android:layout_alignStart="@+id/editText6" />
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText7"-->
+        <!--android:layout_below="@+id/textView16"-->
+        <!--android:layout_alignRight="@+id/editText6"-->
+        <!--android:layout_alignEnd="@+id/editText6"-->
+        <!--android:layout_alignLeft="@+id/editText6"-->
+        <!--android:layout_alignStart="@+id/editText6" />-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="email"
-        android:id="@+id/textView17"
-        android:layout_below="@+id/editText7"
-        android:layout_centerHorizontal="true" />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="email"-->
+        <!--android:id="@+id/textView17"-->
+        <!--android:layout_below="@+id/editText7"-->
+        <!--android:layout_centerHorizontal="true" />-->
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText8"
-        android:layout_below="@+id/textView17"
-        android:layout_alignLeft="@+id/editText7"
-        android:layout_alignStart="@+id/editText7"
-        android:layout_alignRight="@+id/editText7"
-        android:layout_alignEnd="@+id/editText7" />
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText8"-->
+        <!--android:layout_below="@+id/textView17"-->
+        <!--android:layout_alignLeft="@+id/editText7"-->
+        <!--android:layout_alignStart="@+id/editText7"-->
+        <!--android:layout_alignRight="@+id/editText7"-->
+        <!--android:layout_alignEnd="@+id/editText7" />-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Mot de passe"
-        android:id="@+id/textView18"
-        android:layout_below="@+id/editText8"
-        android:layout_centerHorizontal="true" />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Mot de passe"-->
+        <!--android:id="@+id/textView18"-->
+        <!--android:layout_below="@+id/editText8"-->
+        <!--android:layout_centerHorizontal="true" />-->
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText9"
-        android:layout_below="@+id/textView18"
-        android:layout_alignLeft="@+id/editText8"
-        android:layout_alignStart="@+id/editText8"
-        android:layout_alignRight="@+id/editText8"
-        android:layout_alignEnd="@+id/editText8" />
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText9"-->
+        <!--android:layout_below="@+id/textView18"-->
+        <!--android:layout_alignLeft="@+id/editText8"-->
+        <!--android:layout_alignStart="@+id/editText8"-->
+        <!--android:layout_alignRight="@+id/editText8"-->
+        <!--android:layout_alignEnd="@+id/editText8" />-->
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="valider"
-        android:id="@+id/button5"
-        android:layout_below="@+id/editText9"
-        android:layout_centerHorizontal="true" />
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="valider"-->
+        <!--android:id="@+id/button5"-->
+        <!--android:layout_below="@+id/editText9"-->
+        <!--android:layout_centerHorizontal="true" />-->
 
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="creé un compte"
-        android:id="@+id/switch2"
-        android:layout_below="@+id/button4"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5"
-        android:checked="false" />
+    <!--<Switch-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="creé un compte"-->
+        <!--android:id="@+id/switch2"-->
+        <!--android:layout_below="@+id/button4"-->
+        <!--android:layout_alignLeft="@+id/button5"-->
+        <!--android:layout_alignStart="@+id/button5"-->
+        <!--android:checked="false" />-->
 </RelativeLayout>
