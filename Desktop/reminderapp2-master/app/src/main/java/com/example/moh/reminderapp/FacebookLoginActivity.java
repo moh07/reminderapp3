@@ -58,6 +58,7 @@ public class FacebookLoginActivity extends AppCompatActivity {
                             FacebookLoginActivity.this,
                             R.string.app_not_logged_in,
                             Toast.LENGTH_LONG).show();
+
                     return;
                 }
                 GraphRequest.Callback callback = new GraphRequest.Callback() {
